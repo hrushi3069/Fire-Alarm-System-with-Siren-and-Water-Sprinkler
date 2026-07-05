@@ -29,10 +29,32 @@ This project is an Arduino-based fire detection system that detects flames using
 
 ## Working
 
-1. Flame sensor detects fire.
-2. Buzzer sounds immediately.
-3. After 5 seconds, the relay activates.
-4. Water pump starts sprinkling water.
+The Fire Alarm System continuously monitors the environment using a flame sensor connected to the Arduino Uno.
+
+1. **System Initialization**
+   - The Arduino configures the flame sensor as an input.
+   - The buzzer and relay module are configured as outputs.
+   - The relay remains OFF and the buzzer is silent during normal operation.
+
+2. **Fire Detection**
+   - The flame sensor continuously checks for the presence of a flame.
+   - When a flame is detected, the sensor sends a LOW signal to the Arduino.
+
+3. **Alarm Activation**
+   - As soon as a flame is detected, the Arduino immediately activates the buzzer.
+
+4. **Sprinkler Delay**
+   - The Arduino starts a 5-second timer using the `millis()` function.
+   - If the flame remains detected for 5 seconds, the relay is activated.
+
+5. **Water Sprinkler Activation**
+   - The relay turns ON the water pump.
+   - The pump sprays water to help suppress the fire.
+
+6. **System Reset**
+   - When no flame is detected, the buzzer turns OFF.
+   - The relay switches OFF the water pump.
+   - The timer is reset and the system continues monitoring.
 
 ## Images
 
