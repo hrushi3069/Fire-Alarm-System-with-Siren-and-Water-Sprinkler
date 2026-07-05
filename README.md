@@ -36,7 +36,17 @@ This project is an Arduino-based fire detection system that detects flames using
 
 ## Images
 
-(Add screenshots here)
+### Prototype
+
+![Prototype](images/Prototype.png)
+
+### Circuit Diagram
+
+![Circuit Diagram](images/Circuit%20Diagram.png)
+
+### Block Diagram
+
+![Block Diagram](images/Block%20Diagram.png)
 
 ## Future Improvements
 
